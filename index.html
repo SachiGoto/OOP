@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index2.js" defer></script>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border:1px solid black;
+            height:100px;
+            width:100px;
+            text-align:center;
+        }
+
+        #message{
+            margin-top:20px;
+        }
+
+        .playersNameBox{
+            display:flex;
+            justify-content:center;
+        }
+
+        .player{
+            margin:10px;
+        }
+
+        .playerNameInput{
+        
+            width:200px;
+            height:80px;
+        }
+
+        .disable{
+            background-color:rgb(226, 223, 223);
+        }
+    </style>
+</head>
+<style>
+    body{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+
+    }
+</style>
+<body>
+
+    <table id="table">
+        <tr class="tr">
+            <td class="td" id="1"></td>
+            <td class="td" id="2"></td>
+            <td class="td" id="3"></td>
+
+        </tr>
+        <tr class="tr">
+            <td class="td" id="4"></td>
+            <td class="td" id="5"></td>
+            <td class="td" id="6"></td>
+
+        </tr>
+        <tr class="tr">
+            <td class="td" id="7"></td>
+            <td class="td" id="8"></td>
+            <td class="td" id="9"></td>
+
+        </tr>
+    </table>
+
+    <div id="message"></div>
+
+    <div class="playersNameBox">
+        <div class="player">
+            <p>Player 1 </p>
+            <input id="player1" class="playerNameInput" placeholder = "your name">
+        </div>
+        <div class="player">
+            <p>Player 2 </p>
+            <input id="player2" class="playerNameInput"  placeholder = "your name">
+        </div>
+    </div>
+
+    <button id="playBtn">Play!</button>
+
+
+  
+</body>
+</html>
